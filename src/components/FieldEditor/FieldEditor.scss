@@ -1,0 +1,297 @@
+.field-editor {
+  height: 100%;
+  
+  .ant-card {
+    border: 1px solid #e8e8e8;
+    border-radius: 12px;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    
+    .ant-card-head {
+      min-height: 48px;
+      padding: 0 20px;
+      border-bottom: 1px solid #f0f0f0;
+      background: linear-gradient(135deg, #fafafa 0%, #ffffff 100%);
+      border-radius: 12px 12px 0 0;
+      
+      .ant-card-head-title {
+        font-weight: 600;
+        font-size: 16px;
+        color: #262626;
+        padding: 12px 0;
+      }
+    }
+    
+    .ant-card-body {
+      padding: 20px;
+      flex: 1;
+      overflow-y: auto;
+    }
+  }
+  
+  .form-control {
+    margin-bottom: 20px;
+    
+    label {
+      display: block;
+      margin-bottom: 8px;
+      font-weight: 600;
+      font-size: 13px;
+      color: #434343;
+      letter-spacing: 0.2px;
+    }
+    
+    .ant-input,
+    .ant-select,
+    .ant-input-number {
+      width: 100%;
+      border-radius: 8px;
+      border: 2px solid #f0f0f0;
+      transition: all 0.3s ease;
+      
+      &:hover {
+        border-color: #bae7ff;
+      }
+      
+      &:focus,
+      &.ant-input-focused,
+      &.ant-select-focused {
+        border-color: #1890ff;
+        box-shadow: 0 0 0 3px rgba(24, 144, 255, 0.1);
+      }
+    }
+    
+    .ant-input-number {
+      .ant-input-number-input {
+        border-radius: 8px;
+      }
+    }
+    
+    .ant-switch {
+      margin-left: 12px;
+      
+      &.ant-switch-checked {
+        background: #1890ff;
+      }
+    }
+    
+    .ant-typography-secondary {
+      display: block;
+      margin-top: 6px;
+      font-size: 12px;
+      color: #8c8c8c;
+      line-height: 1.4;
+    }
+  }
+  
+  .ant-collapse {
+    background: transparent;
+    border: none;
+    
+    .ant-collapse-item {
+      border: none;
+      margin-bottom: 12px;
+      
+      .ant-collapse-header {
+        background: linear-gradient(135deg, #fafafa 0%, #f5f5f5 100%);
+        border-radius: 8px !important;
+        padding: 12px 16px;
+        font-weight: 600;
+        color: #262626;
+        border: 1px solid #f0f0f0;
+        
+        .ant-collapse-arrow {
+          color: #1890ff;
+        }
+      }
+      
+      .ant-collapse-content {
+        border: none;
+        background: transparent;
+        
+        .ant-collapse-content-box {
+          padding: 16px;
+          background: #fafafa;
+          border-radius: 0 0 8px 8px;
+          border: 1px solid #f0f0f0;
+          border-top: none;
+        }
+      }
+    }
+  }
+  
+  // Improved Conditional Logic Styles
+  .conditional-section {
+    .condition-card {
+      background: white;
+      border: 1px solid #e8e8e8;
+      border-radius: 8px;
+      padding: 16px;
+      margin-bottom: 12px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+      transition: all 0.2s ease;
+      
+      &:hover {
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+        border-color: #d9d9d9;
+      }
+      
+      .condition-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 12px;
+        padding-bottom: 8px;
+        border-bottom: 1px solid #f0f0f0;
+        
+        .condition-number {
+          font-weight: 600;
+          color: #1890ff;
+          background: #e6f7ff;
+          padding: 4px 10px;
+          border-radius: 12px;
+          font-size: 12px;
+        }
+        
+        .delete-condition {
+          color: #ff4d4f;
+          background: #fff2f0;
+          border: 1px solid #ffccc7;
+          border-radius: 6px;
+          padding: 4px 8px;
+          cursor: pointer;
+          transition: all 0.2s ease;
+          
+          &:hover {
+            background: #ffccc7;
+            transform: scale(1.05);
+          }
+        }
+      }
+      
+      .condition-content {
+        .condition-row {
+          margin-bottom: 12px;
+          
+          &:last-child {
+            margin-bottom: 0;
+          }
+          
+          .condition-label {
+            display: block;
+            font-weight: 500;
+            font-size: 12px;
+            color: #595959;
+            margin-bottom: 4px;
+          }
+          
+          .ant-select,
+          .ant-input {
+            width: 100%;
+            border-radius: 6px;
+          }
+        }
+        
+        .logic-operator {
+          background: #f0f0f0;
+          color: #595959;
+          padding: 8px 12px;
+          border-radius: 6px;
+          font-weight: 500;
+          font-size: 12px;
+          text-align: center;
+          margin: 8px 0;
+          
+          &.and {
+            background: #e6f7ff;
+            color: #1890ff;
+          }
+          
+          &.or {
+            background: #fff7e6;
+            color: #fa8c16;
+          }
+        }
+      }
+    }
+    
+    .add-condition-btn {
+      margin-top: 16px;
+      height: 44px;
+      border-radius: 8px;
+      border: 2px dashed #d9d9d9;
+      background: #fafafa;
+      font-weight: 500;
+      transition: all 0.3s ease;
+      
+      &:hover {
+        border-color: #1890ff;
+        color: #1890ff;
+        background: #e6f7ff;
+        transform: translateY(-1px);
+      }
+    }
+  }
+  
+  // Empty state for conditions
+  .no-conditions {
+    text-align: center;
+    padding: 32px 24px;
+    color: #bfbfbf;
+    font-style: italic;
+    background: #fafafa;
+    border-radius: 8px;
+    border: 2px dashed #d9d9d9;
+    
+    .empty-icon {
+      font-size: 24px;
+      margin-bottom: 8px;
+      display: block;
+    }
+  }
+}
+
+// Responsive adjustments
+@media (max-width: 768px) {
+  .field-editor {
+    .ant-card {
+      .ant-card-body {
+        padding: 16px;
+      }
+    }
+    
+    .conditional-section {
+      .condition-card {
+        padding: 12px;
+        
+        .condition-content {
+          .condition-row {
+            margin-bottom: 10px;
+          }
+        }
+      }
+    }
+    
+    .form-control {
+      margin-bottom: 16px;
+    }
+  }
+}
+
+// Animation for smooth transitions
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.condition-card {
+  animation: slideIn 0.3s ease-out;
+}

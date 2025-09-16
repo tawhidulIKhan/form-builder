@@ -1,0 +1,12 @@
+body {
+  margin: 0;
+  font-family: "Inter", sans-serif;
+  background: #f9f9f9;
+}
+
+.builder-container {
+  display: grid;
+  grid-template-columns: 300px 1fr 400px;
+  gap: 16px;
+  padding: 16px;
+}

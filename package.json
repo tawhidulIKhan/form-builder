@@ -11,6 +11,7 @@
   },
   "dependencies": {
     "@ant-design/icons": "^6.0.2",
+    "@hello-pangea/dnd": "^18.0.1",
     "antd": "^5.27.3",
     "formik": "^2.4.6",
     "react": "^19.1.1",
