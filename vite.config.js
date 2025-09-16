@@ -4,5 +4,5 @@ import react from '@vitejs/plugin-react'
 // https://vite.dev/config/
 export default defineConfig({
   plugins: [react()],
-  base: '/form-builder/'  // replace REPO_NAME with your GitHub repository name
+  base: './'  // replace REPO_NAME with your GitHub repository name
 })
